@@ -39,18 +39,6 @@
   
 </head>
 <body>
-  <script>
-    // Add event listener to the back button
-    document.getElementById('backButton').addEventListener('click', () => {
-      if (window.history.length > 1) {
-        // Go back to the previous page in the browsing history
-        window.history.back();
-      } else {
-        // If there's no history, redirect to a default page
-        window.location.href = '/';
-      }
-    });
-  </script>
 
   <h1>Privacy Policy for Emotion Tracking Service Using MorphCast SDK</h1>
   <p><strong>Last Updated:</strong> [Insert Date]</p>
@@ -90,7 +78,18 @@
 
   <div class="backlink">
       <button id="backButton">Go back to task</button>
-    </a>
+      <script>
+    // Add event listener to the back button
+    document.getElementById('backButton').addEventListener('click', () => {
+      if (window.history.length > 1) {
+        // Go back to the previous page in the browsing history
+        window.history.back();
+      } else {
+        // If there's no history, redirect to a default page
+        window.location.href = '/';
+      }
+    });
+  </script>
   </div>
 
 </body>
