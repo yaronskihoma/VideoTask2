@@ -76,20 +76,22 @@
   <h2>6. Changes to This Privacy Policy</h2>
   <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, with an updated "Last Updated" date.</p>
 
-  <div class="backlink">
-      <button id="backButton">Go back to task</button>
-      <script>
-    // Add event listener to the back button
-    document.getElementById('backButton').addEventListener('click', () => {
+ <div class="backlink">
+    <button onclick="goBack()">Back to Previous Page</button>
+  </div>
+
+  <script>
+    function goBack() {
       if (window.history.length > 1) {
-        // Go back to the previous page in the browsing history
+        // Go to the previous page in the browser history
         window.history.back();
       } else {
-        // If there's no history, redirect to a default page
-        window.location.href = '/';
+        // If no history is available, navigate to the default page
+        window.location.href = 'https://yaronskihoma.github.io/VideoTask2/index.html';
       }
-    });
+    }
   </script>
+
   </div>
 
 </body>
